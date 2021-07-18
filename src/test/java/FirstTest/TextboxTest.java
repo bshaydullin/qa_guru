@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
-public class TextboxTests {
+public class TextboxTest {
 
     @BeforeAll
     static void setup() {
@@ -45,6 +45,7 @@ public class TextboxTests {
         $("#stateCity-wrapper").$(byText("Delhi")).click();
         $("#submit").click();
 
+        sleep(10000);
 
         $x("//tbody/tr[1]/td[2]").shouldHave(text("Bulat Shaydullin"));
         $x("//tbody/tr[2]/td[2]").shouldHave(text("bshaydullin@gaguru.ru"));
