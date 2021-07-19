@@ -45,7 +45,6 @@ public class TextboxTest {
         $("#stateCity-wrapper").$(byText("Delhi")).click();
         $("#submit").click();
 
-        sleep(10000);
 
         $x("//tbody/tr[1]/td[2]").shouldHave(text("Bulat Shaydullin"));
         $x("//tbody/tr[2]/td[2]").shouldHave(text("bshaydullin@gaguru.ru"));
