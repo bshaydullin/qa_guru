@@ -44,15 +44,15 @@ public class TextboxTest {
         $("#submit").click();
 
 
-        $x("//tbody/tr[1]/td[2]").shouldHave(text("Bulat Shaydullin"));
-        $x("//tbody/tr[2]/td[2]").shouldHave(text("bshaydullin@gaguru.ru"));
-        $x("//tbody/tr[3]/td[2]").shouldHave(text("Male"));
-        $x("//tbody/tr[4]/td[2]").shouldHave(text("1212121212"));
-        $x("//tbody/tr[5]/td[2]").shouldHave(text("12 December,1991"));
-        $x("//tbody/tr[6]/td[2]").shouldHave(text("English"));
-        $x("//tbody/tr[7]/td[2]").shouldHave(text("Music"));
-        $x("//tbody/tr[8]/td[2]").shouldHave(text("logo.png"));
-        $x("//tbody/tr[9]/td[2]").shouldHave(text("Kazan"));
-        $x("//tbody/tr[10]/td[2]").shouldHave(text("NCR Delhi"));
+        $(".table-responsive").shouldHave(text("Bulat Shaydullin"));
+        $(".table-responsive").shouldHave(text("bshaydullin@gaguru.ru"));
+        $(".table-responsive").shouldHave(text("Male"));
+        $(".table-responsive").shouldHave(text("1212121212"));
+        $(".table-responsive").shouldHave(text("12 December,1991"));
+        $(".table-responsive").shouldHave(text("English"));
+        $(".table-responsive").shouldHave(text("Music"));
+        $(".table-responsive").shouldHave(text("logo.png"));
+        $(".table-responsive").shouldHave(text("Kazan"));
+        $(".table-responsive").shouldHave(text("NCR Delhi"));
     }
 }
