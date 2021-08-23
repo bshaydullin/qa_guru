@@ -1,2 +1,0 @@
-project1/Human.java
- project1.Human

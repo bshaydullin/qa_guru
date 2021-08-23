@@ -1,4 +1,4 @@
-package HomeworkLessonTwo;
+package Homeworks.HomeworkLessonTwo;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
@@ -36,8 +36,7 @@ public class TextboxTest {
         $x("//label[contains(text(),'Music')]").click();
         $("#uploadPicture").uploadFile(file);
         $("#currentAddress").setValue("Kazan");
-        $("#submit").scrollIntoView(true);
-        $("#stateCity-wrapper").$(byText("Select State")).click();
+        $("#stateCity-wrapper").$(byText("Select State")).scrollIntoView(true).click();
         $("#stateCity-wrapper").$(byText("NCR")).click();
         $("#stateCity-wrapper").$(byText("Select City")).click();
         $("#stateCity-wrapper").$(byText("Delhi")).click();
